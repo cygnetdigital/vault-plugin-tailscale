@@ -1,0 +1,15 @@
+builds:
+- main: ./cmd/vault-plugin-tailscale
+  goos:
+  - linux
+  - darwin
+  goarch:
+  - amd64
+  - arm64
+  - arm
+  ldflags: -s -w
+
+release:
+  github:
+    owner: cygnetdigital
+    name: vault-plugin-tailscale
